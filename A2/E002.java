@@ -1,7 +1,7 @@
 /*
         ----------------------------------- Exercise 2 -----------------------------------
 
-        Write a program that reads the height of a group of 20 people, calculates and displays:
+        Write a program that reads the height of a group of 5 people, calculates and displays:
 
         1) the greatest height of the group
         2) the average height
