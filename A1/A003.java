@@ -33,7 +33,7 @@ public class A003 {
         double average = (grade1 + grade2) / 2;
 
         // Print the formatted result
-        System.out.printf("Average = %.2f%n", average);
+        System.out.printf("Average = %.2f", average);
 
         scanner.close();
     }
