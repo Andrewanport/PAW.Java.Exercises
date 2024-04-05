@@ -36,46 +36,42 @@ public class A005 {
 
         int O = scanner.nextInt();
 
-        switch (O) {
+        int O = scanner.nextInt();
+
+        switch (O){
             case 1:
                 if (N1 > N2) {
-                    R = N1 - N2;
-                    System.out.println("O valor da Subtração dos valores " + N1 + " e " + N2 + " é de: " + R);
+                    System.out.printf("A subtração de %.2f e %.2f é = %.2f ", N1, N2, (N1 - N2) );
                 }
-                else if (N2 > N1) {
-                    R = N2 - N1;
-                    System.out.println("O valor da Subtração dos valores " + N1 + " e " + N2 + " é de: " + R);
+
+                else if (N1 < N2) {
+                    System.out.printf("A subtração de %.2f e %.2f é = %.2f ", N2, N1, (N2 - N1) );
                 }
-                else {
-                    R = N1 - N2;
-                    System.out.println("O valor da Subtração dos valores " + N1 + " e " + N2 + " é de: " + R);
+
+                else if (N1 == N2) { // could be just "else", i used "else if" just to be more clear about it
+                    System.out.printf("A subtração de %.2f e %.2f é = %.2f ", N1, N2, (N1 - N2) );
                 }
                 break;
 
             case 2:
-                if (N1 == 0 ){
-                    R = 0;
-                    System.out.println(R);
+                if (N1 == 0){
+                    System.out.printf("%.2f dividido por %.2f = %.2f", N1, N2, N1);
                 }
 
-                else if (N2 == 0){
-                    System.out.println("Valor indefinido. Nenhum número pode ser dividido por 0");
+               else if (N2 == 0){
+                    System.out.printf("%.2f dividido por %.2f = [Indefinido]", N1, N2);
                 }
-
-                else {
-                    R = N1 / N2;
-                    System.out.println("O valor da divisão dos valores " + N1 + " e " + N2 + " é de: " + R);
+               else {
+                    System.out.printf("%.2f dividido por %.2f = %.2f", N1, N2, (N1 / N2) );
                 }
                 break;
 
             case 3:
-                R = N1 * N2;
-                System.out.println("O valor da multiplicação dos valores " + N1 + " e " + N2 + " é de: " + R);
+                System.out.printf("%.2f x %.2f = %.2f", N1, N2, (N1 * N2) );
                 break;
 
             case 4:
-                R = (N1 + N2) / 2;
-                System.out.println("O valor da média dos valores " + N1 + " e " + N2 + " é de: " + R);
+                System.out.printf("A média entre %.2f & %.2f = %.2f", N1, N2, ( (N1 + N2) / 2 ) );
                 break;
         }
     }
